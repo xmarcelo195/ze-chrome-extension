@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Filtros Zé",
+  "version": "0.1",
+
+  "description": "Mudar cor do fundo",
+
+  "author": "Marcelo Silva",
+  "content_scripts": [
+   {
+     "matches": ["https://*.mann-filter.com/*"],
+     "css": ["style.css"],
+     "js": ["script.js"]
+   }
+ ],
+  "externally_connectable": {
+    "matches": ["https://*.mann-filter.com/*"]
+  }
+}
